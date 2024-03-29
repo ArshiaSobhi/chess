@@ -1,0 +1,86 @@
+div.item {
+  width: calc(inherit / 8);
+  height: calc(inherit / 8);
+  background-color: white;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  position: relative;
+
+  & span {
+    padding: 0 5px;
+  }
+
+  & div#select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    div#fill-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: black;
+    }
+  }
+
+  & div#lines {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div.horizontal {
+      width: 100%;
+      height: 1px;
+      background-color: black;
+      z-index: 2;
+      position: absolute;
+    }
+
+    div.vertical {
+      width: 1px;
+      height: 100%;
+      background-color: black;
+      z-index: 3;
+      position: absolute;
+    }
+
+    div.slash {
+      width: 1px;
+      height: 150%;
+      transform: rotate(45deg);
+      background-color: black;
+      z-index: 4;
+      position: absolute;
+    }
+
+    div.backSlash {
+      width: 1px;
+      height: 150%;
+      transform: rotate(-45deg);
+      background-color: black;
+      z-index: 5;
+      position: absolute;
+    }
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: flex !important;
+}
