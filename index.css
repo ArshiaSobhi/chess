@@ -595,7 +595,7 @@ video {
 }
 
 .h-\[100vh\] {
-  height: 100vh;
+  height: auto;
 }
 
 .h-\[800px\] {
