@@ -1,3 +1,7 @@
+div#wrapper{
+  height: 200vh !important;
+}
+
 div.item {
   width: calc(inherit / 8);
   height: calc(inherit / 8);
